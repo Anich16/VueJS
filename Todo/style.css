@@ -1,0 +1,77 @@
+.todo-app {
+    width: 700px;
+    background-color: azure;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.title-block {
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    padding: 0;
+    margin: 10px 0 15px;
+    text-shadow: 3px 1px 5px #000;
+}
+
+.form-block {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.field {
+    padding: 8px 15px;
+    width: 75%;
+    font-size: 18px;
+}
+
+.button-add {
+    width: 25%;
+    font-size: 18px;
+}
+
+.todo-list {
+    margin: 25px 0 10px;
+}
+
+.list {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    position: relative;
+    padding: 5px 5px 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.checkbox {
+    transform:scale(1.5);
+    margin: 0 15px;
+}
+
+.button-delete, .button-change {
+    position: absolute;
+    top: 5px;
+}
+
+.button-change {
+    right: 13%;
+}
+
+.button-delete {
+    right: 3%;
+}

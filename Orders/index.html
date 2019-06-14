@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app" class="app" v-cloak>
+        <h1>Услуги</h1>
+
+        <ul>
+            <li v-for="item in items" v-on:click="toggleActive(item)" v-bind:class="{'active': item.active}">
+                {{item.name}}<span>{{item.price | currency}}</span>
+            </li>
+        </ul>
+
+        <div class="total">
+            Итого: <span>{{total() | currency}}</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app" class="app" v-cloak>
+        <div class="search-block">
+            <input type="text" v-model="searchString" placeholder="Введите название статьи">
+        </div>
+
+        <ul>
+            <li v-for="item in filteredItems">
+                <a v-bind:href="item.url">
+                    <img v-bind:src="item.img">
+                    <p>{{item.text}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

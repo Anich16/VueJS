@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app" class="app">
+        <nav v-bind:class="active" v-on:click.prevent>
+            <a href="#" class="link home" v-on:click="makeActive('home')">Главная</a>
+            <a href="#" class="link projects" v-on:click="makeActive('projects')">Проекты</a>
+            <a href="#" class="link services" v-on:click="makeActive('services')">Услуги</a>
+            <a href="#" class="link contact" v-on:click="makeActive('contact')">Контакты</a>
+        </nav>
+
+        <p class="text">Выбран класс <b>{{active}}</b></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

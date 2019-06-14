@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app" class="app>">
+        <div class="menu-block">
+            <a class="list-icon" v-bind:class="{ 'active': layout == 'list'}" v-on:click="layout = 'list'"></a>
+            <a class="grid-icon" v-bind:class="{ 'active': layout == 'grid'}" v-on:click="layout = 'grid'"></a>
+        </div>
+
+        <ul v-if="layout == 'grid'" class="grid">
+            <li v-for="item in items">
+                <a v-bind:href="item.url" target="blank">
+                    <img v-bind:src="item.image.large" />
+                </a>
+            </li>
+        </ul>
+
+        <ul v-if="layout == 'list'" class="list">
+            <li v-for="item in items">
+                <a v-bind:href="item.url" target="blank">
+                    <img v-bind:src="item.image.small">
+                    <p>{{item.title}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

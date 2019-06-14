@@ -1,0 +1,62 @@
+.app {
+    width: 500px;
+    background-color:#5c9bb7;
+    box-shadow: 0 1px 1px #ccc;
+    border-radius: 2px;
+    padding: 14px;
+    margin: 45px auto 20px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    line-height: 19px;
+    padding: 11px 0;
+
+    border-radius: 2px;
+    box-shadow: 0 2px 8px #c4c4c4 inset;
+    text-align: left;
+    font-size: 14px;
+    font-family: inherit;
+    color: #738289;
+    font-weight: bold;
+    outline: none;
+    text-indent: 40px;
+}
+
+ul{
+    list-style: none;
+    width: 428px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 15px;
+}
+
+ul li{
+    border-bottom: 1px solid #000;
+    background-color: #c4c4c4;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+
+}
+
+ul li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li img{
+    width:80px;
+    height:45px;
+    border:none;
+    margin-right: 25px;
+}
+
+ul li p{
+    margin: 0;
+    font-weight: bold;
+    padding-top: 12px;
+    color:#6e7a7f;
+}

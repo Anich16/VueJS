@@ -1,0 +1,44 @@
+.app {
+    width: fit-content;
+    height: 150px;
+    background-color: beige;
+    padding: 5px 5px 0;
+}
+
+/*.home, .projects, .services, .contact {*/
+
+
+    /*background-color: aquamarine;*/
+    /*color: black;*/
+    /*font-size: 20px;*/
+    /*text-decoration: none;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.contact {*/
+    /*margin: 0;*/
+/*}*/
+
+
+
+.text {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.link {
+    padding: 5px 10px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav.home .home,
+nav.projects .projects,
+nav.services .services,
+nav.contact .contact{
+    background-color:#e35885;
+
+}

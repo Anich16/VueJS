@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="todo-app" class="todo-app">
+        <div class="title-block">
+            <h1 class="title">{{ title }}</h1>
+        </div>
+        <form class="form-block">
+            <input type="text" class="field" placeholder="What need to be done?" v-model = "newText">
+            <button type="button"  v-on:click = "addTask" class="button-add">Add Task</button>
+        </form>
+        <div class="todo-list">
+            <ul class="list" id="list">
+                <li class="item" v-for = "item in items">
+                    <input type="checkbox" class="checkbox" v-model="item.status" v-on:click = "changeStatus(item.status)">
+                    {{ item.text }}
+                    <button class="button-delete" type="button" v-on:click = "deleteItem(index)">Delete</button>
+                    <button class="button-change" type="button" v-on:click = "changeItem(index)">Change</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
